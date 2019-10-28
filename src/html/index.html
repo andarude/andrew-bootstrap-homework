@@ -4,14 +4,15 @@
     <title>Bootstrap Homework</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
   </head>
 
   <body>
     <!-- Content starts here -->
-    <div class="container">
+    <div class="container"> <!--'Master' container-->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Pirates</a>
+        <a class="navbar-brand" href="#">Port Royal</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -19,37 +20,43 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Index</a>
+              <a class="nav-link" href="#">Log entry the first</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Other page</a>
+              <a class="nav-link" href="page2.html">Log entry the second</a>
             </li>
           </ul>
         </div>
       </nav> <!--Closes navbar-->
 
-      <div class="jumbotron jumbotron-fluid jumbotron-bg">
-        <div class="container">
-          <h3 class="display-4">Test</h3>
-          <p class="lead">This is where the jumbotron's text will go.</p>
-        </div>
-      </div> <!--Closes jumbotron-->
+      <div class="container jumbotron jumbotron-fluid" style="background-image: url(../img/pirate-ship.jpg)">
+        <h3 class="display-5 text-center">The Captain's Log</h3>
+        <p class="display-6 text-center lead">Keep yer hook hands off me diary</p>
+      </div> <!--Closes container-->
 
       <section>
         <div class="row">
-          <div class="col-sm-12 col-lg-4" id="byline">
-            <img src="src/img/pirate" alt="Picture" height="#" width="#">
-            <h5 id="myName">Andrew Almeter</h5>
-            <h6 id="myOrg">My Publication</h6>
+          <div class="col-sm-12 col-lg-3" id="byline">
+            <media class="media-breakpoint-up(sm)">
+              <img src="../img/pirate.jpg" alt="Picture" class="img-fluid img-thumbnail rounded mx-auto d-block align-right">
+            </media>
+            <br>
+            <h5 class="text-center" id="myName">Likeness o' Cap'n Redbeard</h5>
+            <h6 class="text-center" id="myOrg">Scoundrel, lover, and bargain shopparrr</h6>
           </div>
-          <div class="col-sm-12 col-lg-8" id="page-content">
-            <h4>Heading</h4>
-            <p>Blah blah blah</p>
+          <br>
+          <div class="col-sm-12 col-lg-9" id="page-content">
+              <h4 id="heading">Entry the first</h4>
+              <p>I killed Zakkai's family and nearly got away with it, arr arr arr arr! Hi, this is Andrew from the past. Just writing to let you know that that first line was an inside joke I have with my D&D friends. Please don't report me to the police! Alright, now back to pirate talk. Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast quarter crow's nest nipperkin grog yardarm hempen halter furl. Swab barque interloper chantey doubloon starboard grog black jack gangway rutters. Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase.<br><br> Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to. Trysail Sail ho Corsair red ensign hulk smartly boom jib rum gangway. Case shot Shiver me timbers gangplank crack Jennys tea cup ballast Blimey lee snow crow's nest rutters. Fluke jib scourge of the seven seas boatswain schooner gaff booty Jack Tar transom spirits. Rutters bowsprit Admiral of the Black chantey Yellow Jack brig quarterdeck Jack Ketch belaying pin jury mast.<br><br> Chandler piracy draft loaded to the gunwalls bucko jib brigantine Chain Shot hardtack hang the jib. Shrouds careen Sail ho salmagundi mutiny black spot ahoy line sutler scallywag.Bilge water aye loot brig American Main deadlights handsomely matey run a shot across the bow carouser. Aye sloop cutlass bilged on her anchor jury mast deadlights furl Privateer gibbet lugsail. Tackle skysail crack Jennys tea cup grog blossom bounty furl parrel schooner port Jack Ketch.<br><br> Red ensign hail-shot Jack Tar schooner belaying pin gibbet me piracy six pounders gun. Man-of-war gangway loaded to the gunwalls list line weigh anchor grog log salmagundi case shot. Pinnace yo-ho-ho boatswain ye furl Letter of Marque bucko bilge rutters fluke.
+              </p>
           </div>
         </div>
       </section> <!--Closes content section-->
-    
     </div> <!--Closes MASTER container-->
+
+    <footer>
+      <p class="signature">A class project by Andrew Almeter</p>
+    </footer>
 
     <!-- Closing scripts here -->
     <script src="js/jquery.js"></script>
